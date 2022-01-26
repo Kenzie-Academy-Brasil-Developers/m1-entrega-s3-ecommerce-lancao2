@@ -48,11 +48,17 @@ main{
     justify-content: space-around;
 
 }
+.nada h2{
+    margin-top: 150px;
+}
 .vitrine{
-    width: 1113px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    width: 1000px;
+    height: 1000px;
+    column-gap: 24px;
+    justify-content: center;
+
 }
 section .iten{
     margin-top: 18px;
@@ -127,8 +133,11 @@ section input:hover{
     color: #2E245E;
 }
 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     margin-top: 27px;
-    margin-right: 115px;
     width: 347px;
     height: 462px;
     
@@ -139,7 +148,7 @@ aside{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-aside input{
+.pesquisa input{
     margin-right: 4px;
     width: 246px;
     height: 50px;
@@ -161,12 +170,12 @@ aside button{
     color: #FFFFFF;
     cursor: pointer;
 }
-aside .tituloCarrinho{
+.tituloCarrinho{
     margin-top: 10px;
     width: 347px;
     height: 50px;
     text-align: center;
-    padding-top: 13px;
+    line-height: 35px;
     background-color: #6B54DE;
 }
 aside h2{
@@ -193,4 +202,80 @@ aside h3{
 aside .addCarrinho{
     font-size: 14px;
     color: #828282;
+}
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    height: 462px;
+    background-color: #F5F5F5;
+    overflow: auto;
+}
+.carrinho .iten{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.carrinho .sobreIten{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+.carrinhoPic{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+.carrinhoPic img{
+    width: 100%;
+}
+.carrinho .nomeDoIten{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.carrinho .valorProduto{
+    font-size: 12px;
+    color: #2E245E;
+    font-weight: 600;
+}
+.carrinho input{
+    padding: 0px;
+    background-color: #F5F5F5;
+    border: none;
+    font-size: 14px;
+    color: #828282;
+    font-weight: 400;
+    text-align: start;
+    cursor: pointer;
+}
+.total{
+    background-color: #333333;
+    width: 343px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.total p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.total span{
+    font-size: 16px;
+    color: #828282;
+}
+.total .quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.total .valorTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
