@@ -64,6 +64,11 @@ section .iten{
     flex-direction: column;
 
 }
+section .iten:hover{
+    border-color: #2E245E;
+    border-width: 2px;
+    border-style: solid;
+}
 section .sobreIten{
     width: 296px;
     height: 215px;
@@ -116,6 +121,10 @@ section input{
     background-color: #FFFFFF;
     margin-left: 15px;
     text-decoration: underline #828282;
+    cursor: pointer;
+}
+section input:hover{
+    color: #2E245E;
 }
 aside{
     margin-top: 27px;
