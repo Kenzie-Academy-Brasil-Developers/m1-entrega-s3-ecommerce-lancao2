@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: inter;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+
+}
+.seletor{
+    margin-right: 97px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+}
+.seletor button{
+    border: none;
+    margin: 0px 20px;
+    margin-left: 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #828282;
+    background-color: #F5F5F5;
+}
+.selecionado{
+    font-weight: 600;
+    color: #333333;
+    
+}
+
+h1{
+    margin-left: 118px;
+    font-size: 30px;
+    line-height: 24px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+
+}
+.nada h2{
+    margin-top: 150px;
+}
+.vitrine{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 1000px;
+    column-gap: 24px;
+    justify-content: center;
+    align-content: flex-start;
+
+}
+section .iten{
+    margin-top: 18px;
+    width: 300px;
+    height: 380px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+section .iten:hover{
+    border-color: #2E245E;
+    border-width: 2px;
+    border-style: solid;
+}
+section .sobreIten{
+    width: 296px;
+    height: 215px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section .categoria{
+    width: 73px;
+    height: 26px;
+    color: #FFFFFF;
+    background-color: #2E245E;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 5px;
+}
+section .nome{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+section .descricaoProduto{
+    font-size: 12px;
+    width: 269px;
+    height: 33px;
+    color: #828282;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+section .valorProduto{
+    color: #2E245E;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.iten input{
+    text-align: start;
+    border: none;
+    color: #828282;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    text-decoration: underline #828282;
+    cursor: pointer;
+}
+.iten input:hover{
+    color: #2E245E;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin-top: 27px;
+    width: 347px;
+    height: 462px;
+    
+}
+.pesquisa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.pesquisa input{
+    margin-right: 4px;
+    width: 246px;
+    height: 50px;
+    background-color: #F5F5F5;
+    border: none;
+    font-size: 14px;
+    color: #828282;
+    font-weight: 400;
+    padding: 17px 12px;
+}
+aside button{
+    margin-left: 4px;
+    width: 96px;
+    height: 50px;
+    background-color: #6B54DE;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.tituloCarrinho{
+    margin-top: 10px;
+    width: 347px;
+    height: 50px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #6B54DE;
+}
+aside h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+aside .conteudoCarrinho{
+    width: 347px;
+    height: 344px;
+    background-color: #F5F5F5;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+aside h3{
+    font-weight: bold;
+    font-size: 22px;
+    color: #333333;
+}
+aside .addCarrinho{
+    font-size: 14px;
+    color: #828282;
+}
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+    height: 462px;
+    background-color: #F5F5F5;
+    overflow: auto;
+}
+.carrinho .iten{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.carrinho .sobreIten{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+}
+.carrinhoPic{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+.carrinhoPic img{
+    width: 100%;
+}
+.carrinho .nomeDoIten{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.carrinho .valorProduto{
+    font-size: 12px;
+    color: #2E245E;
+    font-weight: 600;
+}
+.carrinho input{
+    padding: 0px;
+    background-color: #F5F5F5;
+    border: none;
+    font-size: 14px;
+    color: #828282;
+    font-weight: 400;
+    text-align: start;
+    cursor: pointer;
+}
+.total{
+    background-color: #333333;
+    width: 343px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.total p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.total span{
+    font-size: 16px;
+    color: #828282;
+}
+.total .quantidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.total .valorTotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
