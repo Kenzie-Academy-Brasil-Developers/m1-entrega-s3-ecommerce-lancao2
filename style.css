@@ -58,6 +58,7 @@ main{
     height: 1000px;
     column-gap: 24px;
     justify-content: center;
+    align-content: flex-start;
 
 }
 section .iten{
@@ -82,7 +83,7 @@ section .sobreIten{
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-around;
 }
 section .categoria{
     width: 73px;
@@ -92,14 +93,12 @@ section .categoria{
     font-size: 12px;
     text-align: center;
     border-radius: 2px;
-    margin-left: 20px;
     margin-top: 10px;
     padding: 5px;
 }
-section .nomeDoIten{
+section .nome{
     font-size: 18px;
     font-weight: bold;
-    margin-left: 20px;
     margin-top: 15px;
 }
 section .descricaoProduto{
@@ -109,7 +108,6 @@ section .descricaoProduto{
     color: #828282;
     overflow: hidden;
     margin-bottom: 15px;
-    margin-left: 15px;
     margin-top: 15px;
     
 }
@@ -117,19 +115,18 @@ section .valorProduto{
     color: #2E245E;
     font-weight: 600;
     font-size: 12px;
-    margin-left: 15px;
     margin-bottom: 15px;
 }
-section input{
+.iten input{
+    text-align: start;
     border: none;
     color: #828282;
     font-weight: 500;
     background-color: #FFFFFF;
-    margin-left: 15px;
     text-decoration: underline #828282;
     cursor: pointer;
 }
-section input:hover{
+.iten input:hover{
     color: #2E245E;
 }
 aside{
