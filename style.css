@@ -17,6 +17,10 @@ header{
     background-color: #F5F5F5;
 
 }
+.seletor button:hover{
+    font-weight: 600;
+    color: #828282;
+}
 .seletor{
     margin-right: 97px;
     font-size: 16px;
@@ -208,16 +212,20 @@ aside .addCarrinho{
     background-color: #F5F5F5;
     overflow: auto;
 }
-.carrinho .iten{
+.carrinho section{
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
+    
 }
 .carrinho .sobreIten{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 80px;
+    width: 168px;
+    background-color: #F5F5F5;
+    padding: 0px;
 }
 .carrinhoPic{
     display: flex;
