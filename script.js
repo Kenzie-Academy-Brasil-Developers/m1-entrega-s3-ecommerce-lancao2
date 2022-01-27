@@ -1,7 +1,12 @@
 const arrVitrine = []
+const arrcarrinho = []
 const vitrine = document.querySelector(".vitrine")
 const nada = document.querySelector(".nada")
+const carrinhoPadrao = document.querySelector(".conteudoCarrinho")
+const carrinho = document.querySelector(".carrinho")
+const aside = document.querySelector("aside")
 const listaDeCards = [
+
     {
         nome: "Lightweight Jacket",
         preco: "R$ 100,00",
@@ -86,7 +91,87 @@ function criarCard(obj){
 
     arrVitrine.push(vitrine)
     }
-
-    arrVitrine.push(vitrine)
+    
 }
 criarCard()
+//Carrinho
+
+
+vitrine.addEventListener('click', addCarrinhoButton)
+function addCarrinhoButton(add){
+    const addCar = add.target;
+    if(addCar.tagName === 'INPUT'){
+        if(arrcarrinho.length == 0){
+            carrinhoPadrao.remove()
+            addCarrinho()
+            valorBarr()
+        }else{
+            addCarrinho()
+        }
+    }
+
+}
+function addCarrinho(){
+    const iten = document.createElement("div")
+    iten.className = "iten"
+    const carrinhoPic = document.createElement("div")
+    carrinhoPic.className = "carrinhoPic"
+    const img = document.createElement("img")
+    img.src = "/pic/Men-Jacket-Front-Black__15466 1.png"
+    img.alt = ""
+    const sobreIten = document.createElement("div")
+    sobreIten.className = "sobreIten"
+    const nomeDoIten = document.createElement("p")
+    nomeDoIten.className = "nomeDoIten"
+    nomeDoIten.innerText = "Lightweight Jacket"
+    const valor = document.createElement("span")
+    valor.className = "valorProduto"
+    valor.innerText = "R$ 100,00"
+    const botao = document.createElement("input")
+    botao.type = "button"
+    botao.value = "Remover Produto"
+
+
+    sobreIten.appendChild(nomeDoIten)
+    sobreIten.appendChild(valor)
+    sobreIten.appendChild(botao)
+    carrinhoPic.appendChild(img)
+    iten.appendChild(carrinhoPic)
+    iten.appendChild(sobreIten)
+    carrinho.appendChild(iten)
+    arrcarrinho.push(iten)
+
+}
+carrinho.addEventListener('click', rmvCarrinhoButton)
+function rmvCarrinhoButton(rmv){
+    const rmvCar = rmv.target
+    console.log(rmvCar.tagName)
+    if(rmvCar.tagName == 'INPUT'){
+        
+    }
+}
+function valorBarr(){
+    const spanV = document.createElement("span")
+    spanV.innerText = "R$ 100,00"
+    const pV = document.createElement("p")
+    pV.innerText = "Total:"
+    const valorT = document.createElement("div")
+    valorT.className = "valorTotal"
+    const spanQ = document.createElement("span")
+    spanQ.innerText = "3"
+    const pQ = document.createElement("p")
+    pQ.innerText = "Quantidade:"
+    const quantidade = document.createElement("div")
+    quantidade.className = "quantidade"
+    const total = document.createElement("div")
+    total.className = "total"
+
+    quantidade.appendChild(pQ)
+    quantidade.appendChild(spanQ)
+    valorT.appendChild(pV)
+    valorT.appendChild(spanV)
+    total.appendChild(quantidade)
+    total.appendChild(valorT)
+    aside.appendChild(total)
+
+}
