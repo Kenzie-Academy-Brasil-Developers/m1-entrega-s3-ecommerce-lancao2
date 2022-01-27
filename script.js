@@ -180,6 +180,7 @@ function rmvCarrinhoButton(rmv){
                 prego.splice(i,1)
                 value = 0
                 for(let i = 0; i< prego.length ;i++){
+
                     value += prego[i]
                 }
                 valorBarr(value)
@@ -200,7 +201,7 @@ function valorBarr(value){
     total.innerHTML = "" 
     total.className = "total"
     const spanV = document.createElement("span")
-    spanV.innerText = value
+    spanV.innerText = "R$ " + value
     const pV = document.createElement("p")
     pV.innerText = "Total:"
     const valorT = document.createElement("div")
