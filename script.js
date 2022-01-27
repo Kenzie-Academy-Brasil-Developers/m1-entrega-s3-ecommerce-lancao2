@@ -12,7 +12,7 @@ const listaDeCards = [
         preco: 100,
         categoria: "Camisetas",
         descricao: "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
-        url: "/pic/Men-Jacket-Front-Black__15466 1.png",
+        url: "./pic/Men-Jacket-Front-Black__15466 1.png",
         
     },
     {
@@ -20,35 +20,35 @@ const listaDeCards = [
         preco: 100,
         categoria: "Acessórios",
         descricao: "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
-        url: "/pic/image 1.png",
+        url: "./pic/image 1.png",
     },
     {
         nome: "Mask",
         preco:  40,
         categoria: "Acessórios",
         descricao: "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
-        url: "/pic/Surgical-Mask-Black__89554 1.png",
+        url: "./pic/Surgical-Mask-Black__89554 1.png",
     },
     {
         nome: "T-Shirt",
         preco: 100,
         categoria: "Camisetas",
         descricao: "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
-        url: "/pic/Men-TShirt-Black-Front__70046 1.png",
+        url: "./pic/Men-TShirt-Black-Front__70046 1.png",
     },
     {
         nome: "Short-Sleeve T-Shirt",
         preco: 100,
         categoria: "Camisetas",
         descricao: "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-        url: "/pic/mockup-a0dc2330__62146 1.png",
+        url: "./pic/mockup-a0dc2330__62146 1.png",
     },
     {
         nome: "Champion Packable Jacket",
         preco: 100.00,
         categoria: "Camisetas",
         descricao: "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-        url: "/pic/mockup-9b9894f1__67347 1.png",
+        url: "./pic/mockup-9b9894f1__67347 1.png",
     }
 
 ]
