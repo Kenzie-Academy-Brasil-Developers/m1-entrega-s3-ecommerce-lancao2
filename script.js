@@ -64,7 +64,7 @@ function criarPadrao(){
 criarPadrao()
 const carrinhoPadrao = document.querySelector(".conteudoCarrinho")
 
-function criarCard(obj){
+function criarCard(){
     nada.remove()
     for(let i = 0; i<listaDeCards.length; i++){
     const iten = document.createElement("div")
